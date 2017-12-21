@@ -10,11 +10,6 @@ public:
 	{
 	}
 
-	void sort()
-	{
-
-	}
-
 	void display()
 	{
 		int length = sizeof(data) / sizeof(int);
@@ -28,14 +23,14 @@ public:
 
 		for (int i = 1; i < length; ++i)
 		{
-			int tmp = data[i];
+			int current = data[i];
 
 			int j = i;
-			for (; j > 0 && data[j - 1] > tmp; j--)
+			for (; j > 0 && data[j - 1] > current; j--)
 			{
 				data[j] = data[j - 1];
 			}
-			data[j] = tmp;
+			data[j] = current;
 		}
 		std::cout << " after sort data is : ";
 		for (int i = 0; i < length; ++i)

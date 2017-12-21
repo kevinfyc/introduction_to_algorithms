@@ -3,6 +3,7 @@
 #include "test.h"
 
 #include "insert_sort.hpp"
+#include "merge_sort.hpp"
 
 int main()
 {
@@ -22,6 +23,15 @@ int main()
 	is.display();
 	std::cout << "-----------------------------------------------" << std::endl;
 	std::cout << "-- insert sort end" << std::endl;
+	std::cout << "-----------------------------------------------" << std::endl;
+
+	std::cout << "-----------------------------------------------" << std::endl;
+	std::cout << "-- merge sort bgn" << std::endl;
+	std::cout << "-----------------------------------------------" << std::endl;
+	MergeSort ms;
+	ms.display();
+	std::cout << "-----------------------------------------------" << std::endl;
+	std::cout << "-- merge sort end" << std::endl;
 	std::cout << "-----------------------------------------------" << std::endl;
 
 	system("pause");
